@@ -1,0 +1,132 @@
+/* General chat container styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    background-color: #fff;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.chat-message.user {
+    background-color: #d1e7ff;
+    margin-left: auto;
+    border-radius: 10px 10px 0 10px;
+}
+
+.chat-message.bot {
+    background-color: #e3e3e3;
+    margin-right: auto;
+    border-radius: 10px 10px 10px 0;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 2px solid #ddd;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+#chat-output {
+    display: flex;
+    flex-direction: column;
+}
+/* General chat styling */
+#chat-output {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.user-message, .bot-message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+/* User message styling */
+.user-message {
+    background-color: #dcf8c6; /* WhatsApp green */
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Bot message styling */
+.bot-message {
+    background-color: #ffffff; /* Light gray */
+    border: 1px solid #ddd;
+    align-self: flex-start;
+    text-align: left;
+}
+
